@@ -220,9 +220,11 @@ class VQGANModel(SRModel):
             self.test()
 
             visuals = self.get_current_visuals()
-            sr_img = tensor2img([visuals['result']])
+            # sr_img = tensor2img([visuals['result']])
+            # sr_img = tensor2img([visuals['result']], rgb2bgr=True, min_max=(-1, 1))
             if 'gt' in visuals:
                 gt_img = tensor2img([visuals['gt']])
+                gt_img = tensor2img([visuals['gt']], rgb2bgr=True, min_max=(-1, 1))
                 del self.gt
 
             # tentative for out of GPU memory
