@@ -108,7 +108,7 @@ def create_train_val_dataloader(opt, logger):
 
 
 def train_pipeline(root_path):
-    # parse options, set distributed setting, set ramdom seed
+    # parse options, set distributed setting, set random seed
     opt = parse_options(root_path, is_train=True)
 
     torch.backends.cudnn.benchmark = True

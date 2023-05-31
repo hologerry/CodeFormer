@@ -1,0 +1,12 @@
+export CUDA_VISIBLE_DEVICES=1
+
+# python inference_codeformer.py -w 0.5 -s 1 --face_upsample --bg_upsampler realesrgan --input_path /D_data/Front/free_face_voice_driving_generation_results/voice_video_ref_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_video_500_videos/male4_5_rec.mp4
+
+# mv results/male4_5_0.5/final_results /D_data/Front/free_face_voice_driving_generation_results/voice_video_ref_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_video_500_videos/male4_5_rec.mp4_0.5
+
+# python inference_codeformer.py -w 0.5 -s 1 --face_upsample --bg_upsampler realesrgan --input_path /D_data/Front/free_face_voice_driving_generation_results/voice_v2v_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_video_500/male4_5__male19
+# mv results/male4_5__male19_0.5/final_results /D_data/Front/free_face_voice_driving_generation_results/voice_v2v_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_video_500/male4_5__male19_0.5
+
+python inference_codeformer.py -w 0.5 -s 1 --face_upsample --bg_upsampler realesrgan --input_path /D_data/Front/free_face_voice_driving_generation_results/voice_v2v_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_demo_2_500/male4_5__000276
+mv results/male4_5__000276_0.5/final_results /D_data/Front/free_face_voice_driving_generation_results/voice_v2v_none_none_mouth_jaw_reconheadkp-mlevel-imgsefeatse3wdcncatfuse-light_voice_driving_demo_2_500/male4_5__000276_0.5_1.4
+
